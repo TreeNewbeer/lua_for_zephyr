@@ -7,6 +7,6 @@ project(hello_world)
 
 target_sources(app PRIVATE src/main.c)
 
-add_subdirectory(lua)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../lua  ${CMAKE_CURRENT_BINARY_DIR}/lua)
 
 target_link_libraries(app PRIVATE lua)

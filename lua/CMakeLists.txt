@@ -44,7 +44,7 @@ target_sources(app PRIVATE port/port.c)
 
 target_link_libraries(lua zephyr_interface)
 
-target_compile_options(lua PRIVATE 
+target_compile_options(lua PRIVATE
                         -Wall -O2 -std=c99
                         -DLUA_USE_READLINE
                         -fno-stack-protector -fno-common)
